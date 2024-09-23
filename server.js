@@ -143,11 +143,11 @@ app.use(
     })
   );
 //
-app.use(express.static('build'));
-//page refresh ....3:43:00-->page refresh..krne se server pe koi v request h..index.html ko serve kr dena
-app.use((req, res, next) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+// app.use(express.static('build'));
+// //page refresh ....3:43:00-->page refresh..krne se server pe koi v request h..index.html ko serve kr dena
+// app.use((req, res, next) => {
+//     res.sendFile(path.join(__dirname, 'build', 'index.html'));
+// });
 
 const userSocketMap = new Map();
 //const userSocketMap2={};
